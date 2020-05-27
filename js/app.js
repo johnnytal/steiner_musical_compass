@@ -97,7 +97,7 @@ gameMain.prototype = {
 		try{
 			window.addEventListener("deviceorientation", compassSuccess, true);
         } catch(e){ 
-        	try{navigator.compass.watchHeading(compassSuccess, compassError)catch(e){alert(e)}; 
+        	navigator.compass.watchHeading(compassSuccess, compassError); 
         }   
     },
 

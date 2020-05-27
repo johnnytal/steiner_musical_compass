@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<widget id="xdk.ilyich.compass" version="1.5" android-versionCode="103004" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<widget id="xdk.ilyich.compass" version="1.6" android-versionCode="103005" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 		<name>Steiner's Musical Compass</name>
 		<description>An Anthroposophic Compass</description>
 		<author email="johnnytal9@gmail.com" href="http://www.ilyichgames.com"> Johnny Tal </author>
