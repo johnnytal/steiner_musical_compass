@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<widget id="ilyich.cocoon.sara" version="2.1" android-versionCode="200001" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-		<name>Sara Sings a Happy Song</name>
-		<description>Create Your Sara remix</description>
+	<widget id="xdk.ilyich.compass" version="1.4" android-versionCode="103003" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+		<name>Steiner's Musical Compass</name>
+		<description>An Anthroposophic Compass</description>
 		<author email="johnnytal9@gmail.com" href="http://www.ilyichgames.com"> Johnny Tal </author>
 		<content src="index.html"/>
 		
@@ -23,7 +23,7 @@
 		</platform>
 		
 		<preference name="Fullscreen" value="true"/>
-		<preference name="Orientation" value="portrait"/>
+		<preference name="Orientation" value="landscape"/>
 		<preference name="android-build-tool" value="gradle" />
 		<preference name="android-targetSdkVersion" value="28"/>
 		<preference name="android-minSdkVersion" value="16"/>
@@ -34,8 +34,10 @@
 		<plugin name="cordova-plugin-statusbar" spec="*"/>
 		<plugin name="cordova-plugin-extension" spec="*"/>
 		<plugin name="cordova-plugin-whitelist" version="1"/>
+		<plugin name="cordova-plugin-device-orientation" spec="*"/>
+		
 		<plugin name="cordova-plugin-admobpro" source="npm">
-			<variable name="ADMOB_APP_ID" value="ca-app-pub-9795366520625065~9137630791" />
+			<variable name="ADMOB_APP_ID" value="ca-app-pub-9795366520625065~8646648233" />
 			<variable name="PLAY_SERVICES_VERSION" value="16.0.0" />
 		</plugin>
 

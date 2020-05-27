@@ -82,7 +82,7 @@ gameMain.prototype = {
         sfxWater.play();
         sfxEarth.play();
 
-        //initAd();    
+        initAd();    
 
         try{
             window.plugins.insomnia.keepAwake();
@@ -93,8 +93,10 @@ gameMain.prototype = {
                 StatusBar.hide();
             } catch(e){}   
         }, 1000);
-
-        navigator.compass.watchHeading(compassSuccess, compassError);
+		
+		try{
+        	navigator.compass.watchHeading(compassSuccess, compassError);
+        } catch(e){ compassError(); }   
     },
 
     update: function(){  

@@ -16,7 +16,6 @@ preloader.prototype = {
         this.game.load.audio('air', 'assets/audio/air.ogg');
         this.game.load.audio('water', 'assets/audio/water.ogg'); 
         this.game.load.audio('fire', 'assets/audio/fire.ogg'); 
-
     },
     
     create: function(){
