@@ -95,7 +95,8 @@ gameMain.prototype = {
         }, 1000);
 		
 		try{
-        	navigator.compass.watchHeading(compassSuccess, compassError);
+			window.addEventListener("deviceorientation", compassSuccess, true);
+        	//navigator.compass.watchHeading(compassSuccess, compassError);
         } catch(e){ compassError(); }   
     },
 
@@ -105,7 +106,7 @@ gameMain.prototype = {
 };
 
 function compassSuccess(heading) {
-    var head = heading.magneticHeading;
+    var head = 360 - (Math.round(heading.alpha));
     if (head == 0) head = 360;
     var note = Math.round(head / 30);
 
